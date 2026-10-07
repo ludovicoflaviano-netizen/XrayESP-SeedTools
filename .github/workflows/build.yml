@@ -13,9 +13,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '9.2'
+      - run: gradle --version
       - run: gradle build --refresh-dependencies
       - uses: actions/upload-artifact@v4
         if: success()
