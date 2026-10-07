@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "xrayespseedtools",
+  "version": "${version}",
+  "name": "Xray ESP + Seed Tools",
+  "description": "Client-side X-ray/ESP and known-seed analysis for Minecraft 1.21.11.",
+  "authors": [
+    "ludovicoflaviano-netizen"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.ludovicoflaviano.xrayespseedtools.XrayEspSeedToolsClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "fabric-api": ">=0.141.3"
+  }
+}

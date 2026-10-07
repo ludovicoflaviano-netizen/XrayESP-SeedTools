@@ -1,0 +1,2 @@
+package net.ludovicoflaviano.xrayespseedtools;
+public final class SeedAnalyzer { private SeedAnalyzer() {} public static String describe(long seed) { long x=seed^(seed>>>33); x*=0xff51afd7ed558ccdl; x^=x>>>33; return "Seed "+seed+" | analysis fingerprint "+Long.toUnsignedString(x)+" | known-seed analysis only."; } }
